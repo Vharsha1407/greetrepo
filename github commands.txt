@@ -1,0 +1,62 @@
+C:\Users\verizon>git clone https://github.com/Karpagavadivu/ogticket
+Cloning into 'ogticket'...
+remote: Enumerating objects: 122, done.
+remote: Counting objects: 100% (122/122), done.
+remote: Compressing objects: 100% (76/76), done.
+remote: Total 122 (delta 24), reused 102 (delta 4), pack-reused 0 (from 0)
+Receiving objects: 100% (122/122), 21.04 KiB | 769.00 KiB/s, done.
+Resolving deltas: 100% (24/24), done.
+
+C:\Users\verizon>cd ogticket
+
+C:\Users\verizon\ogticket>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        projectcms/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\verizon\ogticket>git add .
+warning: in the working copy of 'projectcms/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/.mvn/wrapper/maven-wrapper.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/mvnw', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/mvnw.cmd', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/src/main/java/com/example/projectcms/ProjectcmsApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projectcms/src/test/java/com/example/projectcms/ProjectcmsApplicationTests.java', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\verizon\ogticket>git commit -m "campaign management "
+[master abd66f8] campaign management
+ 12 files changed, 799 insertions(+)
+ create mode 100644 projectcms/.gitignore
+ create mode 100644 projectcms/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 projectcms/mvnw
+ create mode 100644 projectcms/mvnw.cmd
+ create mode 100644 projectcms/pom.xml
+ create mode 100644 projectcms/src/main/java/com/example/projectcms/ProjectcmsApplication.java
+ create mode 100644 projectcms/src/main/java/com/example/projectcms/Repository/CmsRepository.java
+ create mode 100644 projectcms/src/main/java/com/example/projectcms/controller/CmsController.java
+ create mode 100644 projectcms/src/main/java/com/example/projectcms/entity/CmsEntity.java
+ create mode 100644 projectcms/src/main/java/com/example/projectcms/service/CmsService.java
+ create mode 100644 projectcms/src/main/resources/application.properties
+ create mode 100644 projectcms/src/test/java/com/example/projectcms/ProjectcmsApplicationTests.java
+
+C:\Users\verizon\ogticket>git pull
+Already up to date.
+
+C:\Users\verizon\ogticket>git push
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (33/33), 10.79 KiB | 460.00 KiB/s, done.
+Total 33 (delta 2), reused 6 (delta 1), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Karpagavadivu/ogticket
+   7255e30..abd66f8  master -> master
+
+C:\Users\verizon\ogticket>

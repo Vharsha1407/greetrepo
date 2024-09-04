@@ -1,0 +1,8 @@
+package com.testdemo.testingdemo;
+
+public class AppTest {
+	public void loginSuccess() {
+		System.out.println("login success test case");
+		
+	}
+}

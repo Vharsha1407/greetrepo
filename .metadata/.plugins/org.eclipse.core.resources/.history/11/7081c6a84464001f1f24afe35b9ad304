@@ -1,0 +1,56 @@
+package com.testdemo.testingdemo;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class AppTest 
+{
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.edge.driver", "C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\msedgedriver.exe");
+		EdgeDriver driver = new EdgeDriver();
+		driver.get("https://www.google.com/");
+		driver.close();
+		//to open chrome browser
+		System.setProperty("webdriver.chrome.driver","C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\chromedriver.exe");
+		ChromeDriver driver1=new ChromeDriver();
+		Thread.sleep(3000);
+		driver1.get("https://letcode.in/");
+		Thread.sleep(3000);
+		driver1.manage().window().maximize();
+		driver1.findElementByLinkText("Log in").click();
+		Thread.sleep(3000);
+		driver1.findElementByName("email").sendKeys("vharsha.bca24@gmail.com");
+		Thread.sleep(3000);
+		driver1.findElementByName("password").sendKeys("Sansha@1414");
+		Thread.sleep(3000);
+		driver1.findElementByXPath("//button[normalize-space(text())='LOGIN']").click();
+		Thread.sleep(3000);
+		String ans = driver1.findElementByXPath("//a[normalize-space(text())='Sign out']").getText();
+		System.out.println(ans);
+		driver1.close();
+		
+		System.setProperty("webdriver.edge.driver", "C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\msedgedriver.exe");
+		EdgeDriver driver = new EdgeDriver();
+		driver.get("https://www.google.com/");
+		driver.close();
+		//to open chrome browser
+		System.setProperty("webdriver.chrome.driver","C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\chromedriver.exe");
+		ChromeDriver driver2=new ChromeDriver();
+		Thread.sleep(3000);
+		driver2.get("https://letcode.in/");
+		Thread.sleep(3000);
+		driver2.manage().window().maximize();
+		driver2.findElementByLinkText("Log in").click();
+		Thread.sleep(3000);
+		driver2.findElementByName("email").sendKeys("vharsha.bca24@gmail.com");
+		Thread.sleep(3000);
+		driver2.findElementByName("password").sendKeys("Sansha@1414");
+		Thread.sleep(3000);
+		driver2.findElementByXPath("//button[normalize-space(text())='LOGIN']").click();
+		Thread.sleep(3000);
+		String ans1 = driver2.findElementByXPath("//button[normalize-space(text())='LOGIN']").getText();
+		System.out.println(ans);
+		driver2.close();
+		
+		}
+}

@@ -1,0 +1,20 @@
+package com.testdemo.testingdemo;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class AppTest 
+{
+	public static void main(String[] args) {
+		System.setProperty("webdriver.edge.driver", "C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\msedgedriver.exe");
+		EdgeDriver driver = new EdgeDriver();
+		driver.get("https://www.google.com/");
+		driver.close();
+		//to open chrome browser
+		System.setProperty("webdriver.chrome.driver","C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\chromedriver.exe");
+		ChromeDriver driver1=new ChromeDriver();
+		driver1.get("https://www.google.com/");
+		driver1.get("https://mvnrepository.com/");
+		driver1.close();
+		}
+}

@@ -1,0 +1,12 @@
+package com.testdemo.testingdemo;
+
+public class AppTest {
+	@Test
+	public void loginSuccess() {
+		System.out.println("login success test case");
+		
+	}
+	public void loginFailure() {
+		System.out.println("login failure test case");
+	}
+}

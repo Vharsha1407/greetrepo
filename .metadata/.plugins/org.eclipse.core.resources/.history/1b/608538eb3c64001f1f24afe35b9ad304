@@ -1,0 +1,13 @@
+package com.testdemo.testingdemo;
+
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class AppTest 
+{
+	public static void main(String[] args) {
+		System.setProperty("webdriver.edge.driver", "C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\msedgedriver.exe");
+		EdgeDriver driver = new EdgeDriver();
+		driver.get("https://www.google.com/");
+		driver.close();
+		}
+}

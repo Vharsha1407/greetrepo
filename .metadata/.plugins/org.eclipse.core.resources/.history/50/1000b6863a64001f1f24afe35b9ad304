@@ -1,0 +1,10 @@
+package com.testdemo.testingdemo;
+
+
+public class AppTest 
+{
+	public static void main(String[] args) {
+		System.setProperty("webdriver.edge.driver", "C:\\Vharsha\\testingdemo\\src\\test\\java\\com\\testdemo\\testingdemo\\driver\\msedgedriver.exe")
+		EdgeDriver driver = new EdgeDriver();
+	}
+}

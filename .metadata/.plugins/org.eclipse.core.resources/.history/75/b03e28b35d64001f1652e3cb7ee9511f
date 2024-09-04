@@ -1,0 +1,14 @@
+package com.testdemo.testingdemo;
+
+import org.testng.annotations.Test;
+
+public class AppTest {
+	@Test
+	public void loginSuccess() {
+		System.out.println("login success test case");
+		
+	}
+	public void loginFailure() {
+		System.out.println("login failure test case");
+	}
+}
